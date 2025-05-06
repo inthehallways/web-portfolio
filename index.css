@@ -1,0 +1,142 @@
+/* root | all */
+* {
+    font-family: Poppins, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Element */
+body {
+	font-family: Poppins, sans-serif;
+	background: linear-gradient(to right, #0C3C01, #003A70);
+	color: #F1F2ED;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Navigation Bar */
+.navbar {
+	background: rgba(91, 109, 73, 0.4);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 40px;
+}
+
+.navbar .logo {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #F1F2ED;
+}
+
+.navbar ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.navbar a {
+	color:#F1F2ED;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.3s;
+}
+
+.navbar a:hover {
+	color: #003A70;
+}
+
+/* Hero Section */
+.hero {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 140px;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.hero-img {
+	flex: 1 1 250px;
+	display: flex;
+	justify-content: center;
+}
+
+.hero-img img {
+	width: 600px;
+	height: 700px;
+	border-radius: 20px;
+	object-fit: cover;
+	border: 5px solid #5B6D49;
+}
+
+.hero-img img:hover {
+	transform: scale(1.05);
+	transition: transform 0.3s;
+}
+
+.hero-text {
+	flex: 2 1 400px;
+	text-align: left;
+	max-width: 600px;
+	padding-bottom: 20px;
+}
+
+.hero-text h1 {
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+	.hero-text p {
+	margin-bottom: 30px;
+}
+
+.badges {
+	margin-bottom: 20px;
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.badge {
+	background-color: #5B6D49;
+	color: #F1F2ED;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 14px;
+	font-size: 14px;
+	border-radius: 20px;
+	font-weight: 600;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	transition: transform 0.2s;
+}
+
+.badge:hover {
+	transform: scale (1.05);
+}
+
+.badge img {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.btn {
+	padding: 12px 25px;
+	background: #5B6D49;
+	color: #F1F2ED;
+	border-radius: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+	background: #F1F2ED;
+	color: #5B6D49;
+}
