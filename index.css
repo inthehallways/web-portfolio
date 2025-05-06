@@ -140,3 +140,93 @@ body {
 	background: #F1F2ED;
 	color: #5B6D49;
 }
+
+/* Skills Section */
+.skills {
+	padding: 60px 40px;
+	background: rgba(91, 109, 73, 0.25);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #F1F2ED;
+	text-align: center;
+}
+
+.skills h2 {
+	font-size: 2.4em;
+	margin-bottom: 30px;
+	color: #F1F2ED;
+}
+
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+.skill-card {
+	background: #5B6D49;
+	padding: 30px;
+	border-radius: 20px;
+	width: 300px;
+	box-shadow: 0 6px 12px rgba (0, 0, 0, 0.3);
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card h3 {
+	font-size: 1.8em;
+	margin-bottom: 15px;
+	color: #F1F2ED;
+}
+
+.skill-card p {
+	font-size: 1.2em;
+	color: whitesmoke;
+}
+
+.skill-card hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer Section */
+.footer {
+	background: linear-gradient(to right, #0C3C01, #003A70);
+	color: #f1f1f1;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.footer-logo img {
+	max-width: 150px;
+}
+
+.footer-links {
+	display: flex;
+	gap: 15px;
+}
+
+.social-link img {
+	width: 30px;
+	height: 30px;
+	transition: transform 0.3s;
+}
+
+.social-link img:hover {
+	transform: scale(1.1);
+}
+
+.footer-text {
+	font-size:0.9em;
+	color: #F1F2ED;
+}
