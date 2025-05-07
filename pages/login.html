@@ -16,25 +16,26 @@
         }
 
         .gradient-custom {
-            background: linear-gradient(to left, #0C3C01, #003A70);
+            background: #6b927f url('../assets/images/gradient-bg.png') no-repeat center center;
+            background-size: cover;
         }
 
-        .btn-olive {
+        .btn-darkblue {
             background-color: #003A70;
-            color: #F1F2ED;
+            color: #fbf8ee;
             border: none;
         }
 
-        .btn-olive:hover {
+        .btn-darkblue:hover {
             background: #5B6D49;
-            color: #F1F2ED;
+            color: #fbf8ee;
         }
 
-        .text-olive {
+        .text-darkblue {
             color: #003A70;
         }
 
-        .text-olive:hover {
+        .text-darkblue:hover {
             color: #5B6D49;
         }
 
@@ -48,9 +49,12 @@
     <section class="vh-100">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-12 col-md-8 col-lg-6 col-xl-5">            
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">       
+                    <div class="text-center mb-4">
+                        <img src="../assets/images/logo-night-ver1.png" alt="AISLE Logo" style="max-height: 90px;">
+                    </div>     
                     <div class="card card-custom shadow-lg" style="border-radius: 1rem;">
-                        <div class="card-body p-5 text-center">
+                        <div class="card-body p-5 text-center">                             
                             <h3 class="mb-5">Login</h3>
                             <form id="loginForm">
                                 <div class="form-floating mb-3">
@@ -61,11 +65,11 @@
                                     <input type="password" class="form-control" id="password" placeholder="Password" required>
                                     <label for="password">Password</label>
                                 </div>
-                                <button class="btn btn-olive btn-lg w-100 mb-4" type="submit">Login</button>
+                                <button class="btn btn-darkblue btn-lg rounded-pill w-100 mb-4" type="submit">Login</button>
                                 <p class="mb-0">Don't have an account?
-                                    <a href="../pages/registration.html" class="text-olive fw-bold">Register</a>
+                                    <a href="../pages/registration.html" class="text-darkblue fw-bold">Register</a>
                                 </p>
-                            </form>
+                            </form> 
                         </div>
                     </div>
                 </div>
