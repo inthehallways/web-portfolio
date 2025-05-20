@@ -66,16 +66,16 @@ body {
 }
 
 .hero-img img {
-	width: 600px;
-	height: 700px;
+	width: 500px;
+	height: 600px;
 	border-radius: 20px;
 	object-fit: cover;
 	border: 5px solid #5B6D49;
+	transition: transform 0.3s ease-in-out;
 }
 
 .hero-img img:hover {
 	transform: scale(1.05);
-	transition: transform 0.3s;
 }
 
 .hero-text {
@@ -137,8 +137,8 @@ body {
 }
 
 .btn:hover {
-	background: #F1F2ED;
-	color: #5B6D49;
+	background: #505f40;
+	color: #fbf8ee;
 }
 
 /* Skills Section */
@@ -169,21 +169,21 @@ body {
 
 .skill-card {
 	background: #5B6D49;
-	padding: 30px;
+	padding: 20px;
 	border-radius: 20px;
-	width: 300px;
-	box-shadow: 0 6px 12px rgba (0, 0, 0, 0.3);
+	width: 270px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 	transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill-card h3 {
-	font-size: 1.8em;
+	font-size: 1.5em;
 	margin-bottom: 15px;
 	color: #F1F2ED;
 }
 
 .skill-card p {
-	font-size: 1.2em;
+	font-size: 1em;
 	color: whitesmoke;
 }
 
@@ -209,7 +209,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 	gap: 2rem;
 	padding: 0 1rem;
 }
@@ -255,7 +255,7 @@ body {
 }
 
 .project-content {
-	padding: 1.5 rem;
+	padding: 0.5rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	margin-left: 1rem;
