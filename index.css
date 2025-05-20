@@ -88,13 +88,15 @@ body {
 }
 
 .hero-text h1 {
-	font-size: 30px;
+	font-size: clamp(1.5rem, 2.2vw + 1rem, 30px);
 	padding-bottom: 10px;
 }
 
 .hero-text p {
+	font-size: clamp(1rem, 1.5vw + 0.2rem, 18px);
 	margin-bottom: 30px;
 }
+
 
 .badges {
 	margin-bottom: 20px;
@@ -349,14 +351,14 @@ body {
 
 /* Breakpoints for Responsiveness */
 
-/* Large Tablets and Small Laptops (≤1024px) */
-@media (max-width: 1024px) {
+/* Medium to Large Screens (≤1199px) */
+@media (max-width: 1200px) {
 	.hero {
 		flex-direction: row;
 		flex-wrap: wrap;
-		gap: 60px;
 		justify-content: center;
-		padding: 2.5rem 4%;
+		gap: 40px;
+		padding: 3rem 6%;
 	}
 
 	.hero-img {
@@ -367,23 +369,17 @@ body {
 
 	.hero-img img {
 		width: 100%;
+		max-width: 450px;
+		aspect-ratio: 5 / 6;
 		height: auto;
-		max-width: 400px;
 		border-radius: 18px;
+		object-fit: cover;
 	}
 
 	.hero-text {
 		flex: 1 1 50%;
 		text-align: left;
 		max-width: 100%;
-	}
-
-	.hero-text h1 {
-		font-size: 2.2rem;
-	}
-
-	.hero-text p {
-		font-size: 1.05rem;
 	}
 }
 
@@ -401,7 +397,7 @@ body {
 
 	.hero {
 		flex-direction: column;
-		align-items: left;
+		align-items: center;
 		text-align: left;
 		gap: 40px;
 		padding: 2rem 5%;
@@ -414,12 +410,12 @@ body {
 	}
 
 	.hero-img img {
+		width: 100%;
 		max-width: 350px;
+		aspect-ratio: 5 / 6;
+		height: auto;
 		border-radius: 16px;
-	}
-
-	.hero-text h1 {
-		font-size: 2rem;
+		object-fit: cover;
 	}
 
 	.skills-list li {
@@ -431,13 +427,13 @@ body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-  	}
+	}
 
-  	.project-card {
+	.project-card {
 		flex: 1 1 300px;
 		max-width: 300px;
 		margin: 10px;
-  	}
+	}
 
 	.project-content {
 		flex: 1;
@@ -469,18 +465,10 @@ body {
 	.hero-img img {
 		width: 100%;
 		max-width: 280px;
+		aspect-ratio: 5 / 6;
 		height: auto;
 		border-radius: 14px;
-	}
-
-	.hero-text h1 {
-		font-size: 1.5rem;
-		line-height: 1.3;
-	}
-
-	.hero-text p {
-		font-size: 0.9rem;
-		line-height: 1.4;
+		object-fit: cover;
 	}
 
 	.btn {
@@ -520,13 +508,13 @@ body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-  	}
+	}
 
-  	.project-card {
+	.project-card {
 		flex: 1 1 300px;
 		max-width: 300px;
 		margin: 10px;
-  	}
+	}
 
 	.social-links {
 		justify-content: center;
